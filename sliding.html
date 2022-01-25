@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* styling of top navbar */
+    .left{
+        width: 250px;
+        height: 120px;
+        /* background-color:#f0f8ff; */
+        display: inline-block;
+        border: 2px solid black;
+    }
+    img{
+        border-radius: 2px solid rgb(32, 13, 13);
+        background-color: red;
+        /* margin-top: 10px; */
+        height:300px;
+        width: 250px;
+        
+    }
+    #m{
+        /* padding: 10px; */
+        height: 110px;
+        width: 150px;
+    }
+    .left #s{
+     background-color: #f0f8ff;
+     border-radius: 50%;
+     display: relative;
+     margin: 10px;
+     width: 20px;
+    }
+    #n{
+        margin: 10px;
+        bottom: 100px;
+        border-radius: 50%;
+        display:relative;
+    }
+</style>
+<body>
+    <!-- full screen -->
+    <div class="container">
+        <!-- previous button -->
+        <div class="left">
+            <button id="s" onclick="setTimeout(funn,800)"href="">&#8249;</button>
+            <!-- center navigation image -->
+            <img  id="m" src="/images_source (1).jpg" alt=""> 
+            <!-- forward button -->
+            <button id="n" onclick="setTimeout(fun,800)" href="">&#8250;</button>
+        </div>
+        </div>
+        <!-- sliding images -->
+        <img id="a" src="/images.jpg" alt="">
+        <img id="b" src="/pexels-pixabay-60597.jpg" alt="">
+
+    <!-- </div> -->
+</body>
+<script>
+    a=document.getElementById("a");
+    console.log(a);
+    p=document.getElementById("n");
+    console.log(p);
+    //first second image to none.so,before we click button we have only first image 
+    // forward image
+    document.getElementById("b").style.display="none";
+        function fun(clicked_id){
+            document.getElementById('a').style.display="none";
+            console.log('a');
+            var img=document.getElementById('b');
+            document.getElementById('b').style.display="block";
+
+    }
+    // backward image
+    document.getElementById("a").style.display="display";
+    function funn(clicked_id){
+            document.getElementById('b').style.display="none";
+            console.log('a');
+            var img=document.getElementById('b');
+            document.getElementById('a').style.display="block";
+    }
+    // setTimeout(5000);
+
+</script>
+</html>
